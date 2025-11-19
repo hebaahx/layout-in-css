@@ -7,22 +7,34 @@
     <link rel="stylesheet" href="../style.css">
     <style>
       /* Doe hier jouw ding! */
-      body{
+     body{
         display: grid;
-        grid-template: 5fr 1fr 1fr;
+        grid-template-rows: 4fr 1fr 1fr;
+        gap: 1rem;
+        grid-row-start: 4;
         grid-template-columns: 1fr 1fr;
-        gap: 1em;
-
       }
-
+ 
+      main{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+      }
+ 
+      footer{
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+ 
       header{
-        grid-row: 3/4;
-        grid-column: 2/3;
+        grid-column-start: 1;
       }
-
+ 
       nav{
-
+       grid-column-start: 2;
       }
+   
     </style>
   </head>
   <body id="basic-layout-3">
